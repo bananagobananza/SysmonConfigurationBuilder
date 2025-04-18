@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sysmon schemaversion="4.90">
+  <HashAlgorithms>md5,sha256,IMPHASH</HashAlgorithms>
+  <DnsLookup>true</DnsLookup>
+  <CheckRevocation>true</CheckRevocation>
+  <FieldSizes>CommandLine:100</FieldSizes>
+</Sysmon>

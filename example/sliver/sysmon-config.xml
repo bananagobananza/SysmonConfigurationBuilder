@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sysmon schemaversion="4.90">
+  <HashAlgorithms>*</HashAlgorithms>
+  <DnsLookup>true</DnsLookup>
+  <CheckRevocation>true</CheckRevocation>
+  <EventFiltering>
+    <RuleGroup name="ProcessCreate" groupRelation="or">
+      <ProcessCreate onmatch="include">
+        <Image condition="begin with">C:\Users\FieryPhoenix\Desktop</Image>
+      </ProcessCreate>
+    </RuleGroup>
+    <RuleGroup name="FileCreateTime" groupRelation="or">
+      <FileCreateTime onmatch="include">
+        <Image condition="contains">implant.exe</Image>
+        <TargetFilename condition="begin with">C:\Users\FieryPhoenix\Desktop</TargetFilename>
+      </FileCreateTime>
+    </RuleGroup>
+    <RuleGroup name="NetworkConnect" groupRelation="or">
+      <NetworkConnect onmatch="include">
+        <DestinationPort condition="is">8888</DestinationPort>
+      </NetworkConnect>
+    </RuleGroup>
+    <RuleGroup name="ProcessTerminate" groupRelation="or">
+      <ProcessTerminate onmatch="include">
+        <Image condition="begin with">C:\Users\FieryPhoenix\Desktop</Image>
+      </ProcessTerminate>
+    </RuleGroup>
+    <RuleGroup name="DriverLoad" groupRelation="or">
+      <DriverLoad onmatch="include">
+        <ImageLoaded condition="begin with">C:\Users\FieryPhoenix\Desktop</ImageLoaded>
+      </DriverLoad>
+    </RuleGroup>
+    <RuleGroup name="ImageLoad" groupRelation="or">
+      <ImageLoad onmatch="include">
+        <ImageLoaded condition="begin with">C:\Users\FieryPhoenix\Desktop</ImageLoaded>
+        <Image condition="contains">implant.exe</Image>
+      </ImageLoad>
+    </RuleGroup>
+    <RuleGroup name="CreateRemoteThread" groupRelation="or">
+      <CreateRemoteThread onmatch="include">
+        <SourceImage condition="begin with">C:\Users\FieryPhoenix\Desktop</SourceImage>
+      </CreateRemoteThread>
+    </RuleGroup>
+    <RuleGroup name="RawAccessRead" groupRelation="or">
+      <RawAccessRead onmatch="include">
+        <Image condition="begin with">C:\Users\FieryPhoenix\Desktop</Image>
+      </RawAccessRead>
+    </RuleGroup>
+    <RuleGroup name="ProcessAccess" groupRelation="or">
+      <ProcessAccess onmatch="include">
+        <SourceImage condition="begin with">C:\Users\FieryPhoenix\Desktop</SourceImage>
+      </ProcessAccess>
+    </RuleGroup>
+    <RuleGroup name="FileCreate" groupRelation="or">
+      <FileCreate onmatch="include">
+        <TargetFilename condition="begin with">C:\Users\FieryPhoenix\Desktop</TargetFilename>
+      </FileCreate>
+    </RuleGroup>
+    <RuleGroup name="RegistryEvent" groupRelation="or">
+      <RegistryEvent onmatch="include">
+        <Image condition="begin with">C:\Users\FieryPhoenix\Desktop</Image>
+      </RegistryEvent>
+    </RuleGroup>
+    <RuleGroup name="FileCreateStreamHash" groupRelation="or">
+      <FileCreateStreamHash onmatch="include">
+        <TargetFilename condition="begin with">C:\Users\FieryPhoenix\Desktop</TargetFilename>
+      </FileCreateStreamHash>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <PipeEvent onmatch="exclude">
+        <Image condition="contains any">wmiprvse.exe</Image>
+      </PipeEvent>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <WmiEvent onmatch="exclude">
+        <RuleName condition="is"></RuleName>
+      </WmiEvent>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <DnsQuery onmatch="exclude">
+        <Image condition="contains">Desktop</Image>
+      </DnsQuery>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <FileDelete onmatch="exclude">
+        <Image condition="contains any">Desktop;svchost.exe;SVCHOST</Image>
+      </FileDelete>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <ClipboardChange onmatch="exclude">
+        <RuleName condition="is"></RuleName>
+      </ClipboardChange>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <ProcessTampering onmatch="exclude">
+        <RuleName condition="is"></RuleName>
+      </ProcessTampering>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <FileDeleteDetected onmatch="exclude">
+        <RuleName condition="is"></RuleName>
+      </FileDeleteDetected>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <FileExecutableDetected onmatch="exclude">
+        <Image condition="contains">Desktop</Image>
+      </FileExecutableDetected>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

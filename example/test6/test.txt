@@ -1,0 +1,24 @@
+Current configuration:
+ - Service name:                  Sysmon
+ - Driver name:                   SysmonDrv
+ - Config file:                   C:\Users\FieryPhoenix\Desktop\Sysmon\config.xml
+ - Config hash:                   SHA256=A02FFAF56E58EBFBA8C226EF3AED498ED6AA79040C3B89FBC9BB9DA2072AE833
+
+ - HashingAlgorithms:             SHA256
+ - Network connection:            disabled
+ - Archive Directory:             -
+ - Image loading:                 disabled
+ - CRL checking:                  enabled
+ - DNS lookup:                    enabled
+
+Rule configuration (version 4.90):
+ - RegistryEvent                      onmatch: include   combine rules using 'Or'
+	Compound Rule 0002   combine using And
+	    TargetObject                   filter: contains     value: '\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\'
+	    Details                        filter: contains     value: '\Downloads\'
+	Compound Rule 0003   combine using And
+	    TargetObject                   filter: contains     value: '\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\'
+	    Details                        filter: contains     value: '\Temporary Internet Files\Content.Outlook\'
+	Compound Rule 0004   combine using And
+	    TargetObject                   filter: contains     value: '\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\'
+	    Details                        filter: contains     value: '\Local Settings\Temporary Internet Files\'

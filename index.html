@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Config - Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="grid-container">
+    <aside id="sidebar">
+      <h1 class="sidebar-title"> Menu </h1>
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item active">
+          <a href="/">
+            <span class="material-icons-outlined">tune</span> Config
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <div class="header">
+      <h1>Configuration</h1>
+      <div class="header-buttons">
+        <button class="button" id="importBtn">Import</button>
+        <button class="button" id="exportBtn">Export</button>
+        <button class="button" id="addBtn">Add RuleGroup</button>
+        <div class="modal" id="eventSelectorModal" style="display:none;">
+          <div class="modal-content">
+            <select class="eventSelector" id="eventSelector"></select>
+            <button class="button" id="confirmAddEvent">Add</button>
+            <button class="button"id="cancelAddEvent">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="generalConfig">
+        <div class="row">
+          <label class="label-title">Sysmon Schema Version:</label>
+          <input type="text" id="schemaVersion">
+        </div>
+        <div class="row">
+          <label class="label-title">Hash Algorithm:</label>
+          <input type="text" id="hashAlgorithm">
+        </div>
+        <div class="row">
+          <label class="label-title">Active Directory:</label>
+          <input type="text" id="activeDirectory">
+        </div>
+        <div class="row">
+          <label class="label-title">Check Revocation:</label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="checkRevocation" id="checkRevocationTrue" value="true" checked> True
+            </label>
+            <label>
+              <input type="radio" name="checkRevocation" id="checkRevocationFalse" value="false"> False
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <label class="label-title">Copy on Delete PE:</label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="copyOnDeletePE" id="copyOnDeletePETrue" value="true"> True
+            </label>
+            <label>
+              <input type="radio" name="copyOnDeletePE" id="copyOnDeletePEFalse" value="false" checked> False
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <label class="label-title">DNS Look up:</label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="dnsLookup" id="dnsLookupTrue" value="true" checked> True
+            </label>
+            <label>
+              <input type="radio" name="dnsLookup" id="dnsLookupFalse" value="false"> False
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <label class="label-title">Field Sizes:</label>
+          <input type="text" id="fieldSizes">
+        </div>
+      </div>
+      <div class="popup" id="eventSelectorPopup" style="display:none;">
+        <div class="popup-content">
+          <div>
+            <button class="button" id="addNormalRule">Normal Rule</button>
+            <button class="button" id="addCompoundRule">Compound Rule</button>
+          </div>
+        </div>
+      </div>
+      <div class="scrollable-container"></div>
+    </div>
+  </div>
+  <script src="js/scripts.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/configData.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,4538 @@
+{
+  "SchemaVersion": "4.90",
+  "HashAlgorithm": "*",
+  "ActiveDirectory": "",
+  "CheckRevocation": "true",
+  "CopyOnDeletePE": "false",
+  "DNSLookup": "true",
+  "FieldSizes": "",
+  "Rules": [
+    {
+      "Event": "ProcessCreate",
+      "EventName": "123",
+      "Action": "include",
+      "GroupRelation": "or",
+      "Conditions": [],
+      "CompoundRules": [
+        {
+          "CompoundName": "",
+          "CombineUsing": "and",
+          "Conditions": [
+            {
+              "RuleName": "gay",
+              "Field": "RuleName",
+              "FilterType": "is",
+              "Value": "gay"
+            },
+            {
+              "RuleName": "asdf",
+              "Field": "IntegrityLevel",
+              "FilterType": "is",
+              "Value": "asdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Event": "ProcessCreate",
+      "EventName": "123",
+      "Action": "exclude",
+      "GroupRelation": "or",
+      "Conditions": [],
+      "CompoundRules": [
+        {
+          "CompoundName": "123",
+          "CombineUsing": "and",
+          "Conditions": [
+            {
+              "RuleName": "123",
+              "Field": "RuleName",
+              "FilterType": "is",
+              "Value": "123"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Event": "ProcessCreate",
+      "EventName": "123",
+      "Action": "exclude",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "\"C:\\Windows\\system32\\wermgr.exe\" \"-queuereporting_svc\""
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\DllHost.exe /Processid"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\wbem\\wmiprvse.exe -Embedding"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\wbem\\wmiprvse.exe -secured -Embedding"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\wermgr.exe -upload"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\SearchIndexer.exe /Embedding"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\windows\\system32\\wermgr.exe -queuereporting"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "\\??\\C:\\Windows\\system32\\autochk.exe *"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "\\SystemRoot\\System32\\smss.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files (x86)\\Common Files\\microsoft shared\\ink\\TabTip32.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\System32\\TokenBrokerCookies.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\System32\\plasrv.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\System32\\wifitask.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\CompatTelRunner.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\PrintIsolationHost.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\SppExtComObj.Exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\audiodg.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\conhost.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\mobsync.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\musNotification.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\musNotificationUx.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\powercfg.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\sndVol.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\sppsvc.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\wbem\\WmiApSrv.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "IntegrityLevel",
+          "FilterType": "is",
+          "Value": "AppContainer"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentCommandLine",
+          "FilterType": "begin with",
+          "Value": "%%SystemRoot%%\\system32\\csrss.exe ObjectDirectory=\\Windows"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentCommandLine",
+          "FilterType": "is",
+          "Value": "C:\\windows\\system32\\wermgr.exe -queuereporting"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\WINDOWS\\system32\\devicecensus.exe UserCxt"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\System32\\usocoreworker.exe -Embedding"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\SearchIndexer.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k appmodel -s StateRepository"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k appmodel -p -s camsvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k appmodel"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k appmodel -p -s tiledatamodelsvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k camera -s FrameServer"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k dcomlaunch -s LSM"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k dcomlaunch -s PlugPlay"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k defragsvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k devicesflow -s DevicesFlowUserSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k imgsvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localService -s EventSystem"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localService -s bthserv"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k LocalService -p -s BthAvctpSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localService -s nsi"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localService -s w32Time"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceAndNoImpersonation"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceAndNoImpersonation -p"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceNetworkRestricted -s Dhcp"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceNetworkRestricted -s EventLog"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceNetworkRestricted -s TimeBrokerSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceNetworkRestricted -s WFDSConMgrSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted -s BTAGService"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\System32\\svchost.exe -k LocalSystemNetworkRestricted -p -s NcbService"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceNetworkRestricted"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceAndNoImpersonation -s SensrSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceAndNoImpersonation -p -s SSDPSRV"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceNoNetwork"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted -p -s WPDBusEnum"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted -p -s fhsvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted -s DeviceAssociationService"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted -s NcbService"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted -s SensorService"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted -s TabletInputService"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted -s UmRdpService"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted -s WPDBusEnum"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted -p -s NgcSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceNetworkRestricted -p -s NgcCtnrSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localServiceAndNoImpersonation -s SCardSvr"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s wuauserv"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\System32\\svchost.exe -k netsvcs -p -s SessionEnv"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted -s WdiSystemHost"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\System32\\svchost.exe -k localSystemNetworkRestricted -p -s WdiSystemHost"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s wlidsvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s ncaSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -s BDESVC"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\System32\\svchost.exe -k netsvcs -p -s BDESVC"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s BITS"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -s BITS"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -s CertPropSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -s DsmSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -p -s Appinfo"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -s Gpsvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -s ProfSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -s SENS"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -s SessionEnv"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -s Themes"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs -s Winmgmt"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k networkService -p -s DoSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k networkService -s Dnscache"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k networkService -s LanmanWorkstation"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k networkService -s NlaSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k networkService -s TermService"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k networkService"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k networkService -p"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k networkServiceNetworkRestricted"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k rPCSS"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k secsvcs"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k swprv"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k unistackSvcGroup"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k utcsvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k wbioSvcGroup"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k werSvcGroup"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k wusvcs -p -s WaaSMedicSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\System32\\svchost.exe -k wsappx -p -s ClipSVC"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k wsappx -p -s AppXSvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k wsappx -s ClipSVC"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k wsappx"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentCommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k netsvcs"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentCommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe -k localSystemNetworkRestricted"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\deviceenroller.exe /c /AutoEnrollMDM"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "\"C:\\Program Files (x86)\\Microsoft\\Edge Dev\\Application\\msedge.exe\" --type="
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\ngen.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "C:\\WINDOWS\\Microsoft.NET\\Framework64\\v4.0.30319\\Ngen.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\ngentask.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "C:\\WINDOWS\\Microsoft.NET\\Framework64\\v4.0.30319\\ngentask.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorsvw.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\mscorsvw.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\Microsoft.Net\\Framework64\\v3.0\\WPF\\PresentationFontCache.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentCommandLine",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\ngentask.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorsvw.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\ngentask.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\mscorsvw.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\ngentask.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files\\Microsoft Office\\Office16\\MSOSYNC.EXE"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files (x86)\\Microsoft Office\\Office16\\MSOSYNC.EXE"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files\\Common Files\\Microsoft Shared\\OfficeSoftwareProtectionPlatform\\OSPPSVC.EXE"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files\\Microsoft Office\\Office16\\msoia.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files (x86)\\Microsoft Office\\root\\Office16\\officebackgroundtaskhandler.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeC2RClient.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentImage",
+          "FilterType": "is",
+          "Value": "C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeClickToRun.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "ParentImage",
+          "FilterType": "is",
+          "Value": "C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeC2RClient.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files\\Windows Media Player\\wmpnscfg.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\" --type="
+        },
+        {
+          "RuleName": "",
+          "Field": "CommandLine",
+          "FilterType": "begin with",
+          "Value": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type="
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "FileCreateTime",
+      "EventName": "",
+      "Action": "include",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\Users"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "\\Device\\HarddiskVolumeShadowCopy"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "FileCreateTime",
+      "EventName": "",
+      "Action": "exclude",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "OneDrive.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "C:\\Windows\\system32\\backgroundTaskHost.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "contains",
+          "Value": "setup"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "contains",
+          "Value": "install"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "contains",
+          "Value": "Update\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "end with",
+          "Value": "redist.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "msiexec.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "TrustedInstaller.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "contains",
+          "Value": "\\NVIDIA\\NvBackend\\ApplicationOntology\\"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "NetworkConnect",
+      "EventName": "",
+      "Action": "include",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\Users"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\Recycle"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\ProgramData"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\Temp"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\perflogs"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\intel"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\fonts"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\config"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "at.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "certutil.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "cmd.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "cmstp.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "cscript.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "driverquery.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "dsquery.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "hh.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "infDefaultInstall.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "java.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "javaw.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "javaws.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "mmc.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "msbuild.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "mshta.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "msiexec.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "nbtstat.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "net.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "net1.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "notepad.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "nslookup.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "powershell.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "powershell_ise.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "qprocess.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "qwinsta.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "qwinsta.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "reg.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "regsvcs.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "regsvr32.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "rundll32.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "rwinsta.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "sc.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "schtasks.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "taskkill.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "tasklist.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "wmic.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "wscript.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "bitsadmin.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "esentutl.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "expand.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "extrac32.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "findstr.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "GfxDownloadWrapper.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "ieexec.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "makecab.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "replace.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "Excel.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "Powerpnt.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "Winword.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "squirrel.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "nc.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "ncat.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "psexec.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "psexesvc.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "tor.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "vnc.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "vncservice.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "vncviewer.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "winexesvc.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "nmap.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "image",
+          "Value": "psinfo.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "22"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "23"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "25"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "143"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "3389"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "5800"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "5900"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "4444"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "1080"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "3128"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "8080"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "1723"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "9001"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationPort",
+          "FilterType": "is",
+          "Value": "9030"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "NetworkConnect",
+      "EventName": "",
+      "Action": "exclude",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "end with",
+          "Value": "AppData\\Local\\Microsoft\\Teams\\current\\Teams.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationHostname",
+          "FilterType": "end with",
+          "Value": ".microsoft.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationHostname",
+          "FilterType": "end with",
+          "Value": "microsoft.com.akadns.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationHostname",
+          "FilterType": "end with",
+          "Value": "microsoft.com.nsatc.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationIp",
+          "FilterType": "is",
+          "Value": "23.4.43.27"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationIp",
+          "FilterType": "is",
+          "Value": "72.21.91.29"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationIp",
+          "FilterType": "is",
+          "Value": "127.0.0.1"
+        },
+        {
+          "RuleName": "",
+          "Field": "DestinationIp",
+          "FilterType": "begin with",
+          "Value": "fe80:0:0:0"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "ProcessTerminate",
+      "EventName": "",
+      "Action": "include",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\Users"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "\\"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "DriverLoad",
+      "EventName": "",
+      "Action": "exclude",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "Signature",
+          "FilterType": "contains",
+          "Value": "microsoft"
+        },
+        {
+          "RuleName": "",
+          "Field": "Signature",
+          "FilterType": "contains",
+          "Value": "windows"
+        },
+        {
+          "RuleName": "",
+          "Field": "Signature",
+          "FilterType": "begin with",
+          "Value": "Intel"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "CreateRemoteThread",
+      "EventName": "",
+      "Action": "exclude",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "SourceImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\wbem\\WmiPrvSE.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "SourceImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\svchost.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "SourceImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\wininit.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "SourceImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\csrss.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "SourceImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\services.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "SourceImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\winlogon.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "SourceImage",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\audiodg.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "StartModule",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\kernel32.dll"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetImage",
+          "FilterType": "is",
+          "Value": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "FileCreate",
+      "EventName": "",
+      "Action": "include",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "contains",
+          "Value": "\\Start Menu"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "contains",
+          "Value": "\\Startup\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "contains",
+          "Value": "\\Content.Outlook\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "contains",
+          "Value": "\\Downloads\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".application"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".appref-ms"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".bat"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".chm"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".cmd"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".cmdline"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".crx"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".dmp"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".docm"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".dll"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".exe.log"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".jar"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".jnlp"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".jse"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".hta"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".job"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".pptm"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".ps1"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".sct"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".sys"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".scr"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".vbe"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".vbs"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".wsc"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".wsf"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".xlsm"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".ocx"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": "proj"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".sln"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".xls"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Users\\Default"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\Drivers"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\SysWOW64\\Drivers"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\GroupPolicy\\Machine\\Scripts"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\GroupPolicy\\User\\Scripts"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\Wbem"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\SysWOW64\\Wbem"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\WindowsPowerShell"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\SysWOW64\\WindowsPowerShell"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\Tasks\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\Tasks"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\SysWOW64\\Tasks"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "\\Device\\HarddiskVolumeShadowCopy"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\AppPatch\\Custom"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "contains",
+          "Value": "VirtualStore"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".xls"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".ppt"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".rtf"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "FileCreate",
+      "EventName": "",
+      "Action": "exclude",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files (x86)\\EMET 5.5\\EMET_Service.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeC2RClient.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\smss.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\CompatTelRunner.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "\\\\?\\C:\\Windows\\system32\\wbem\\WMIADAP.EXE"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Windows\\system32\\mobsync.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\DriverStore\\Temp\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\system32\\wbem\\Performance\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\Installer\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "begin with",
+          "Value": "C:\\$WINDOWS.~BT\\Sources\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\Windows\\winsxs\\amd64_microsoft-windows"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "RegistryEvent",
+      "EventName": "",
+      "Action": "include",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "CurrentVersion\\Run"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Policies\\Explorer\\Run"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Group Policy\\Scripts"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Windows\\System\\Scripts"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "CurrentVersion\\Windows\\Load"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "CurrentVersion\\Windows\\Run"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "CurrentVersion\\Winlogon\\Shell"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "CurrentVersion\\Winlogon\\System"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Notify"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Shell"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Userinit"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\WOW6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Drivers32"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\BootExecute"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\AeDebug"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "UserInitMprLogonScript"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "user shell folders\\startup"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\ServiceDll"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\ServiceManifest"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\ImagePath"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "Control\\Terminal Server\\WinStations\\RDP-Tcp\\PortNumber"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "Control\\Terminal Server\\fSingleSessionPerUser"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "fDenyTSConnections"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "LastLoggedOnUser"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "RDP-tcp\\PortNumber"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "Services\\PortProxy\\v4tov4"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "\\command\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "\\ddeexec\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "{86C86720-42A0-1069-A2E8-08002B30309D}"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "exefile"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\InprocServer32\\(Default)"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\Hidden"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\ShowSuperHidden"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\HideFileExt"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Classes\\*\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Classes\\AllFilesystemObjects\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Classes\\Directory\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Classes\\Drive\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Classes\\Folder\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Classes\\PROTOCOLS\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "ContextMenuHandlers\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "CurrentVersion\\Shell"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\explorer\\ShellExecuteHooks"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\explorer\\ShellServiceObjectDelayLoad"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\explorer\\ShellIconOverlayIdentifiers"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations\\RDP-Tcp\\InitialProgram"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\GPExtensions\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\WinSock"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\ProxyServer"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Authentication\\Credential Provider"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Netsh"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ProxyEnable"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList\\Profiles"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\EnableFirewall"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\DoNotAllowExceptions"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\StandardProfile\\AuthorizedApplications\\List"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\DomainProfile\\AuthorizedApplications\\List"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\Appinit_Dlls\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\Appinit_Dlls\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\AppCertDlls\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Microsoft\\Office\\Outlook\\Addins\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Office Test\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Security\\Trusted Documents\\TrustRecords"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\EnableBHO"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Internet Explorer\\Toolbar\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Internet Explorer\\Extensions\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Browser Helper Objects\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\DisableSecuritySettingsCheck"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\3\\1206"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\3\\2500"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\3\\1809"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Classes\\CLSID\\{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Classes\\WOW6432Node\\CLSID\\{AB8902B4-09CA-4BB6-B78D-A8F59079A8D5}\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Classes\\CLSID\\{083863F1-70DE-11d0-BD40-00A0C911CE86}\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Classes\\WOW6432Node\\CLSID\\{083863F1-70DE-11d0-BD40-00A0C911CE86}\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\UrlUpdateInfo"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\InstallSource"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\EulaAccepted"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\DisableAntiSpyware"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\DisableAntiVirus"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\SpynetReporting"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "DisableRealtimeMonitoring"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\SubmitSamplesConsent"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\LocalAccountTokenFilterPolicy"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "HKLM\\Software\\Microsoft\\Security Center\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\HideSCAHealth"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\Custom"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\InstalledSDB"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "VirtualStore"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\WINEVT\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Safeboot\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Winlogon\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\FriendlyName"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "is",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Installer\\InProgress\\(Default)"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Tracing\\RASAPI32"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "\\Keyboard Layout\\Preload"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "\\Keyboard Layout\\Substitutes"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\LowerCaseLongPath"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\Publisher"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\BinProductVersion"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\DriverVersion"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\DriverVerVersion"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\LinkDate"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Compatibility Assistant\\Store\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "end with",
+          "Value": "regedit.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "\\"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "RegistryEvent",
+      "EventName": "",
+      "Action": "exclude",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "\\{CAFEEFAC-"
+        },
+        {
+          "RuleName": "",
+          "Field": "EventType",
+          "FilterType": "is",
+          "Value": "CreateKey"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\COMPONENTS"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\AppModel\\StateRepository\\Cache"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "Toolbar\\WebBrowser"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "Browser\\ITBar7Height"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "Browser\\ITBar7Layout"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "Internet Explorer\\Toolbar\\Locked"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "Toolbar\\WebBrowser\\{47833539-D0C5-4125-9FA8-0819E2EAAC93}"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "}\\PreviousPolicyAreas"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "\\Control\\WMI\\Autologger\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\UsoSvc\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\Lsa\\OfflineJoin\\CurrentValue"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "_Classes\\AppX"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\WINEVT\\Publishers\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\LsaPid"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\SspiCache"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\Kerberos\\Domains"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\Services\\BITS\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\services\\clr_optimization_v2.0.50727_32\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\services\\clr_optimization_v2.0.50727_64\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\services\\clr_optimization_v4.0.30319_32\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\services\\clr_optimization_v4.0.30319_64\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\services\\deviceAssociationService\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\services\\fhsvc\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\services\\nal\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\services\\trustedInstaller\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\services\\tunnel\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\services\\usoSvc\\Start"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\UserChoice\\ProgId"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\UserChoice\\Hash"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "\\OpenWithList\\MRUList"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "Shell Extentions\\Cached"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "HKLM\\System\\CurrentControlSet\\Control\\Lsa\\Audit\\SpecialGroups"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Startup\\0\\PSScriptOrder"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Startup\\0\\SOM-ID"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Startup\\0\\GPO-ID"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Startup\\0\\0\\IsPowershell"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Startup\\0\\0\\ExecTime"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Shutdown\\0\\PSScriptOrder"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Shutdown\\0\\SOM-ID"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Shutdown\\0\\GPO-ID"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Shutdown\\0\\0\\IsPowershell"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "end with",
+          "Value": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Group Policy\\Scripts\\Shutdown\\0\\0\\ExecTime"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "\\safer\\codeidentifiers\\0\\HASHES\\{"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "contains",
+          "Value": "VirtualStore\\MACHINE\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKLM\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "is",
+          "Value": "C:\\Program Files\\WIDCOMM\\Bluetooth Software\\btwdins.exe"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKCR\\VLC."
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "begin with",
+          "Value": "HKCR\\iTunes."
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetObject",
+          "FilterType": "is",
+          "Value": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\WINEVT\\Publishers\\{945a8954-c147-4acd-923f-40c45405a658}"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "FileCreateStreamHash",
+      "EventName": "",
+      "Action": "include",
+      "GroupRelation": "and",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "contains",
+          "Value": "Downloads"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "contains",
+          "Value": "Temp\\7z"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "contains",
+          "Value": "Startup"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".bat"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".cmd"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".doc"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".hta"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".jse"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".lnk"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".ppt"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".ps1"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".ps2"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".reg"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".sct"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".vb"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".vbe"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".vbs"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".wsc"
+        },
+        {
+          "RuleName": "",
+          "Field": "TargetFilename",
+          "FilterType": "end with",
+          "Value": ".wsf"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "PipeEvent",
+      "EventName": "",
+      "Action": "include",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "PipeName",
+          "FilterType": "contains any",
+          "Value": "paexec;remcom;csexec"
+        },
+        {
+          "RuleName": "",
+          "Field": "PipeName",
+          "FilterType": "contains any",
+          "Value": "\\lsadump;\\cachedump;\\wceservicepipe"
+        },
+        {
+          "RuleName": "",
+          "Field": "PipeName",
+          "FilterType": "contains any",
+          "Value": "\\isapi_http;\\isapi_dg;\\isapi_dg2;\\sdlrpc;\\ahexec;\\winsession;\\lsassw;\\46a676ab7f179e511e30dd2dc41bd388;\\9f81f59bc58452127884ce513865ed20;\\e710f28d59aa529d6792ca6ff0ca1b34;\\rpchlp_3;\\NamePipe_MoreWindows;\\pcheap_reuse;\\gruntsvc;\\583da945-62af-10e8-4902-a8f205c72b2e;\\bizkaz;\\svcctl;\\Posh;\\jaccdpqnvbrrxlaf;\\csexecsvc"
+        },
+        {
+          "RuleName": "",
+          "Field": "PipeName",
+          "FilterType": "contains any",
+          "Value": "\\atctl;\\userpipe;\\iehelper;\\sdlrpc;\\comnap"
+        },
+        {
+          "RuleName": "",
+          "Field": "PipeName",
+          "FilterType": "contains all",
+          "Value": "MSSE-;-server"
+        },
+        {
+          "RuleName": "",
+          "Field": "PipeName",
+          "FilterType": "begin with",
+          "Value": "\\postex_"
+        },
+        {
+          "RuleName": "",
+          "Field": "PipeName",
+          "FilterType": "begin with",
+          "Value": "\\postex_ssh_"
+        },
+        {
+          "RuleName": "",
+          "Field": "PipeName",
+          "FilterType": "begin with",
+          "Value": "\\status_"
+        },
+        {
+          "RuleName": "",
+          "Field": "PipeName",
+          "FilterType": "begin with",
+          "Value": "\\msagent_"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "DnsQuery",
+      "EventName": "",
+      "Action": "exclude",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".arpa."
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".arpa"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".msftncsi.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "..localmachine"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "localhost"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": "-pushp.svc.ms"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".b-msedge.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".bing.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".hotmail.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".live.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".live.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".s-microsoft.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".microsoft.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".microsoftonline.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".microsoftstore.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".ms-acdc.office.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".msedge.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".msn.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".msocdn.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".skype.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".skype.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".windows.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".windows.net.nsatc.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".windowsupdate.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".xboxlive.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "login.windows.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "Image",
+          "FilterType": "begin with",
+          "Value": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".activedirectory.windowsazure.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".aria.microsoft.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".msauth.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".msftauth.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".office.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".opinsights.azure.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".res.office365.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "acdc-direct.office.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "atm-fp-direct.office.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "loki.delve.office.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "management.azure.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "messaging.office.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "outlook.office365.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "portal.azure.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "protection.outlook.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "substrate.office.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".measure.office.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adobe.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adobe.io"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".mozaws.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".mozilla.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".mozilla.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".mozilla.org"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".spotify.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".spotify.map.fastly.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".wbx2.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".webex.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "clients1.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "clients2.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "clients3.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "clients4.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "clients5.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "clients6.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "safebrowsing.googleapis.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".akadns.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".netflix.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": "aspnetcdn.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ajax.googleapis.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "cdnjs.cloudflare.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "fonts.googleapis.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".typekit.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "cdnjs.cloudflare.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".stackassets.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".steamcontent.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "play.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "content-autofill.googleapis.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".disqus.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".fontawesome.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "disqus.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".1rx.io"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".2mdn.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".3lift.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adadvisor.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adap.tv"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".addthis.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adform.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adnxs.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adroll.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adrta.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adsafeprotected.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adsrvr.org"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".adsymptotic.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".advertising.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".agkn.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".amazon-adsystem.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".amazon-adsystem.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".analytics.yahoo.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".aol.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".betrad.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".bidswitch.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".casalemedia.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".chartbeat.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".cnn.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".convertro.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".criteo.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".criteo.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".crwdcntrl.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".demdex.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".domdex.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".dotomi.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".doubleclick.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".doubleverify.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".emxdgt.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".everesttech.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".exelator.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".google-analytics.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".googleadservices.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".googlesyndication.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".googletagmanager.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".googlevideo.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".gstatic.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".gvt1.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".gvt2.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".ib-ibi.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".jivox.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".krxd.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".lijit.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".mathtag.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".moatads.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".moatpixel.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".mookie1.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".myvisualiq.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".netmng.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".nexac.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".openx.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".optimizely.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".outbrain.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".pardot.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".phx.gbl"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".pinterest.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".pubmatic.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".quantcount.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".quantserve.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".revsci.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".rfihub.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".rlcdn.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".rubiconproject.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".scdn.co"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".scorecardresearch.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".serving-sys.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".sharethrough.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".simpli.fi"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".sitescout.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".smartadserver.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".snapads.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".spotxchange.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".taboola.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".taboola.map.fastly.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".tapad.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".tidaltv.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".trafficmanager.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".tremorhub.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".tribalfusion.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".turn.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".twimg.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".tynt.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".w55c.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".ytimg.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".zorosrv.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "1rx.io"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "adservice.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ampcid.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "clientservices.googleapis.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "googleadapis.l.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "imasdk.googleapis.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "l.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ml314.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "mtalk.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "update.googleapis.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "www.googletagservices.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".pscp.tv"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".amazontrust.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".digicert.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".globalsign.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".globalsign.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".intel.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".symcb.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".symcd.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".thawte.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".usertrust.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".verisign.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": "ocsp.identrust.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": "pki.goog"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "msocsp.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.comodoca.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.entrust.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.godaddy.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.int-x3.letsencrypt.org"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.msocsp.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": "pki.goog"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.godaddy.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": "amazontrust.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.sectigo.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "pki-goog.l.google.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": ".usertrust.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.comodoca.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.verisign.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.entrust.net"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "end with",
+          "Value": "ocsp.identrust.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "status.rapidssl.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "status.thawte.com"
+        },
+        {
+          "RuleName": "",
+          "Field": "QueryName",
+          "FilterType": "is",
+          "Value": "ocsp.int-x3.letsencrypt.org"
+        }
+      ],
+      "CompoundRules": []
+    }
+  ]
+}

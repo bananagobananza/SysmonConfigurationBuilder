@@ -1,0 +1,41 @@
+{
+  "SchemaVersion": "4.90",
+  "HashAlgorithm": "*",
+  "ActiveDirectory": "",
+  "CheckRevocation": "true",
+  "CopyOnDeletePE": "true",
+  "DNSLookup": "true",
+  "FieldSizes": "",
+  "Rules": [
+    {
+      "Event": "ProcessCreate",
+      "EventName": "Beta1",
+      "Action": "include",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "124",
+          "Field": "RuleName",
+          "FilterType": "is",
+          "Value": "124"
+        }
+      ],
+      "CompoundRules": []
+    },
+    {
+      "Event": "ProcessCreate",
+      "EventName": "Beta2",
+      "Action": "exclude",
+      "GroupRelation": "or",
+      "Conditions": [
+        {
+          "RuleName": "asdf",
+          "Field": "RuleName",
+          "FilterType": "is",
+          "Value": "asdf"
+        }
+      ],
+      "CompoundRules": []
+    }
+  ]
+}

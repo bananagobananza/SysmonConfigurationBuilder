@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sysmon schemaversion="4.90">
+  <HashAlgorithms>*</HashAlgorithms>
+  <DnsLookup>true</DnsLookup>
+  <CheckRevocation>true</CheckRevocation>
+  <EventFiltering>
+    <RuleGroup name="Beta1" groupRelation="or">
+      <ProcessCreate onmatch="include">
+        <RuleName condition="is" name="124">124</RuleName>
+      </ProcessCreate>
+    </RuleGroup>
+    <RuleGroup name="Beta2" groupRelation="or">
+      <ProcessCreate onmatch="exclude">
+        <RuleName condition="is" name="asdf">asdf</RuleName>
+      </ProcessCreate>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>

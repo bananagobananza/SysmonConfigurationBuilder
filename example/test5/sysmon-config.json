@@ -1,0 +1,10 @@
+{
+  "SchemaVersion": "4.90",
+  "HashAlgorithm": "md5,sha256,IMPHASH",
+  "ActiveDirectory": "",
+  "CheckRevocation": "true",
+  "CopyOnDeletePE": "true",
+  "DNSLookup": "true",
+  "FieldSizes": "CommandLine:100",
+  "Rules": []
+}

@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.material-icons-outlined {
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 35px;
+}
+
+/* Grid Layout for HTML */
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 70px auto; /* Header row = 70px, main row grows */
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+    height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+    color: #210F37;
+    grid-area: header;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0px 30px;
+    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+    min-width: 850px;
+}
+  
+
+.menu-icon {
+    display: none;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+#sidebar {
+    width: 200px;
+    height: 100%;
+    grid-area: sidebar;
+    background-color: #210F37;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    position: fixed;
+}
+
+.sidebar-title {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.sidebar-brand {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sidebar-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar-list-item {
+    padding: 20px 30px 20px 30px;
+    font-size: 24px;
+}
+
+.sidebar-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.sidebar-list-item > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    /*
+    the z-index of the ApexCharts is 11
+    we want the z-index of the sidebar higher so that
+    the charts are not showing over the sidebar 
+    on small screens
+  */
+    z-index: 12 !important;
+}
+

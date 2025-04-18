@@ -1,0 +1,247 @@
+.button {
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #A55B4B;
+    border: none;
+    border-radius: 15px;
+}
+.button:hover {
+    background-color: #DCA06D;
+}
+
+.eventSelector {
+    padding: 15px;
+    font-size: 14px;
+    height: 48px; 
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.main-content {
+    grid-area: main;
+    color: #210F37;
+    padding: 20px 40px 40px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-top: 2px solid #210F37;
+}
+
+.generalConfig {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: #4F1C51;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.generalConfig .row {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 1000;
+}
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 1000;
+}
+.popup-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-buttons {
+    word-spacing: 10px;
+}
+.scrollable-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: auto;
+}
+.config-container {
+    background: #dca16d50;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 60px 40px 40px 40px;
+}
+.row {
+    display: grid;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.row-1 {
+    grid-template-columns: 1fr auto 30px;
+}
+.row-2 {
+    display: grid;
+    grid-template-columns: 60px 1fr 130px 200px;
+    align-items: center;
+    gap: 10px;
+}
+.row-2 input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.row-3,
+.row-4 {
+    grid-template-columns: auto 30px 30px;
+}
+.label-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+input:checked + .slider:before {
+    transform: translateX(18px);
+}
+input[type="text"] {
+    height: 30px;
+    padding: 0 0 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.plus-icon,
+.dropdown-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+.trash-icon {
+    color: grey;
+    cursor: pointer;
+}
+.row.rule {
+    display: grid;
+    grid-template-columns: minmax(0, 100px) minmax(0, 55px) minmax(0, 150px) minmax(0, 85px) 100px auto 30px;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.row.rule input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.row.rule select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 30px;
+}
+.row label {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+.compound-rule-container {
+    padding: 25px 15px 15px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+.compound-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.compound-header label {
+    font-weight: bold;
+}
+.compound-conditions {
+    margin-top: 10px;
+    padding-left: 15px;
+}
+.compound-radio-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.compound-plus-icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
