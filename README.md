@@ -26,17 +26,16 @@ Developed as part of the Project 2 course by the School of Information and Commu
 
 ## Features Demo
 ### Import Configuration
-
+https://github.com/user-attachments/assets/a8f8cb4b-abd2-4ab0-9001-f9ede398debe
 ### Edit Configuration
 #### Add RuleGroup:
-
+https://github.com/user-attachments/assets/3e6bbe68-ac38-4062-bf1d-a4b5048bce81
 #### Add Rule/Compound Rule:
-
+https://github.com/user-attachments/assets/f06b4f0f-ffcc-42cb-a69c-71fd0abea0a9
 #### Arrange Rules:
-
+https://github.com/user-attachments/assets/1c148489-265d-4813-9463-41e1c8d4b423
 ### Export Configuration
-
-
+https://github.com/user-attachments/assets/9a0d81ce-9391-4f9d-81dc-539b94cdfbc0
 
 ## Code Structure
 ```
