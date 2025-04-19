@@ -14,7 +14,7 @@
 ## About Sysmon Configuration Builder
 The Sysmon Configuration Builder is a web application designed to streamline the process of authoring and managing Sysmon configuration files. Sysmon, a powerful tool from Microsoft's Sysinternals suite, enhances Windows system monitoring by logging detailed events for threat detection and incident response. However, crafting effective Sysmon XML configurations can be complex due to intricate rule ordering and filtering logic. This application addresses these challenges by providing an intuitive interface for users to import, edit, and export valid Sysmon configurations, making the process accessible to users with varying expertise.
 
-Developed as part of the Project 2 course by the School of Information and Communication Technology (SoICT) at Hanoi University of Science and Technology (HUST) and Research & Deveopment at VNPT-IT, this application leverages Node.js for the backend and HTML, CSS, and JavaScript for the frontend. It was tested using the Sliver C2 framework to validate configurations against simulated adversarial behaviors, ensuring their effectiveness in detecting Indicators of Compromise (IoCs).
+Developed as part of the Project 2 course by the School of Information and Communication Technology (SoICT) at Hanoi University of Science and Technology (HUST) and Research & Development at VNPT-IT, this application leverages Node.js for the backend and HTML, CSS, and JavaScript for the frontend. It was tested using the Sliver C2 framework to validate configurations against simulated adversarial behaviors, ensuring their effectiveness in detecting Indicators of Compromise (IoCs).
 
 ## Features
 - **Configuration Import:** Import Sysmon configurations in XML or TXT formats for easy editing.
