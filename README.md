@@ -73,7 +73,7 @@ npm run dev
 ```
 
 ## License
-Distributed under the MIT License. See [`LICENSE`](https://github.com/bananagobananza/SysmonConfigurationBuilder/blob/main/README.md) for more information.
+Distributed under the MIT License. See [`LICENSE`](https://github.com/bananagobananza/SysmonConfigurationBuilder/blob/main/LICENSE) for more information.
 
 ## Contact
 This project is maintained by 1 moderators:
