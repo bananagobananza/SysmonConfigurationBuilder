@@ -77,5 +77,5 @@ See [`LICENSE`](https://github.com/bananagobananza/SysmonConfigurationBuilder/bl
 
 ## Contact
 This project is maintained by 1 moderators:
-- QuanPH - [@FieryPhoenix](https://www.facebook.com/quan.phamhong.98871) - quan.ph225551@sis.hust.edu.vn/hongquan090804@gmail.com
+- QuanPH - quan.ph225551@sis.hust.edu.vn/hongquan090804@gmail.com
 
